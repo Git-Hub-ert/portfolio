@@ -1,0 +1,67 @@
+/* ===========================
+   TEAL THEME — VARIABLES ONLY
+   =========================== */
+
+html[data-theme="teal"] {
+  /* Brand */
+  --color-accent: #0D9488;
+  --color-accent-dark: #0B7F75;
+  --color-accent-light: #5EEAD4;
+  --color-accent-secondary: #FF7A59;
+  --color-accent-secondary-light: #FFCAB8;
+  --color-on-accent: #ffffff;
+
+  /* Accent tints (translucent backgrounds for badges/tags/icons) */
+  --color-accent-tint-10: rgba(13, 148, 136, 0.1);
+  --color-accent-tint-15: rgba(13, 148, 136, 0.15);
+  --color-accent-tint-20: rgba(13, 148, 136, 0.2);
+  --color-accent-glow: rgba(13, 148, 136, 0.15);
+
+  /* Surfaces */
+  --color-bg-dark: #F7FBFB;
+  --color-bg-card: #FFFFFF;
+  --color-card-surface: #FFFFFF;
+  --color-nav-bg: #FFFFFF;
+  --color-nav-shadow: rgba(0, 0, 0, 0.05);
+  --color-mobile-menu-bg: #FFFFFF;
+  --color-network-bg: #0F172A;
+
+  /* Text */
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-tertiary: #64748B;
+  --color-text-muted: #94A3B8;
+
+  /* Borders */
+  --color-border: #E6EDF0;
+  --color-border-light: rgba(13, 148, 136, 0.08);
+
+  /* Buttons — secondary/outline style */
+  --color-btn-secondary-bg: transparent;
+  --color-btn-secondary-text: var(--color-accent);
+  --color-btn-secondary-hover-bg: #E6F6F5;
+  --color-btn-secondary-hover-text: var(--color-accent-dark);
+
+  /* Status */
+  --color-error: #DC2626;
+  --color-success: #16A34A;
+
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-xxxl: 64px;
+
+  /* Gradients */
+  --gradient-bg: linear-gradient(135deg, #F7FBFB 0%, #E8F4F3 50%, #F7FBFB 100%);
+  --gradient-text: linear-gradient(90deg, #0D9488 0%, #FF7A59 50%, #0D9488 100%);
+  --gradient-primary-button: linear-gradient(135deg, #0D9488 0%, #0B7F75 100%);
+  --gradient-icon-circle: linear-gradient(135deg, #0D9488 0%, #0B7F75 100%);
+
+  /* Theme-switcher page tint (used by the ::before overlay in Global.css) */
+  --current-theme-primary: #0D9488;
+  --current-theme-glow: rgba(13, 148, 136, 0.03);
+}

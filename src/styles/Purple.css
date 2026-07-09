@@ -1,0 +1,67 @@
+/* ===========================
+   PURPLE THEME — VARIABLES ONLY
+   =========================== */
+
+html[data-theme="purple"] {
+  /* Brand */
+  --color-accent: #8b5cf6;
+  --color-accent-dark: #6d28d9;
+  --color-accent-light: #d8b4fe;
+  --color-accent-secondary: #60a5fa;
+  --color-accent-secondary-light: #93c5fd;
+  --color-on-accent: #ffffff;
+
+  /* Accent tints (translucent backgrounds for badges/tags/icons) */
+  --color-accent-tint-10: rgba(139, 92, 246, 0.1);
+  --color-accent-tint-15: rgba(139, 92, 246, 0.15);
+  --color-accent-tint-20: rgba(139, 92, 246, 0.2);
+  --color-accent-glow: rgba(139, 92, 246, 0.5);
+
+  /* Surfaces */
+  --color-bg-dark: #0f172a;
+  --color-bg-card: #1e293b;
+  --color-card-surface: rgba(30, 41, 59, 0.5);
+  --color-nav-bg: rgba(30, 41, 59, 0.95);
+  --color-nav-shadow: rgba(0, 0, 0, 0.1);
+  --color-mobile-menu-bg: rgba(15, 23, 42, 0.98);
+  --color-network-bg: rgba(30, 41, 59, 0.5);
+
+  /* Text */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cbd5e1;
+  --color-text-tertiary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+
+  /* Borders */
+  --color-border: #334155;
+  --color-border-light: rgba(255, 255, 255, 0.05);
+
+  /* Buttons — secondary/ghost style */
+  --color-btn-secondary-bg: rgba(255, 255, 255, 0.1);
+  --color-btn-secondary-text: var(--color-text-primary);
+  --color-btn-secondary-hover-bg: rgba(255, 255, 255, 0.2);
+  --color-btn-secondary-hover-text: var(--color-text-primary);
+
+  /* Status */
+  --color-error: #ef4444;
+  --color-success: #10b981;
+
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-xxxl: 64px;
+
+  /* Gradients */
+  --gradient-bg: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+  --gradient-text: linear-gradient(90deg, #c084fc 0%, #60a5fa 50%, #c084fc 100%);
+  --gradient-primary-button: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+  --gradient-icon-circle: linear-gradient(135deg, #8b5cf6 0%, #60a5fa 100%);
+
+  /* Theme-switcher page tint (used by the ::before overlay in Global.css) */
+  --current-theme-primary: #8b5cf6;
+  --current-theme-glow: rgba(139, 92, 246, 0.03);
+}
