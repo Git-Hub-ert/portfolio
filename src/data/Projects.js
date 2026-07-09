@@ -24,7 +24,7 @@ const projectsData = [
     ],
     timeframe: 'April 2025 - June 2025',
     links: [
-      { type: 'GitHub', url: 'https://github.com/ragazoub/battle-X', label: 'View Source Code' },
+      { type: 'GitHub', url: 'https://github.com/Git-Hub-ert/battle-X', label: 'View Source Code' },
     ],
     status: 'Completed',
     teamSize: '5 developers',

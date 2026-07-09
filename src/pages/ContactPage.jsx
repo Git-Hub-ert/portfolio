@@ -58,8 +58,8 @@ export default function ContactPage() {
     {
       icon: Github,
       label: 'GitHub',
-      value: 'github.com/ragazoub',
-      href: 'https://github.com/ragazoub',
+      value: 'github.com/Git-Hub-ert',
+      href: 'https://github.com/Git-Hub-ert',
     },
   ];
 
