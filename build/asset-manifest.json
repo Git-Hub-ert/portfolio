@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Git-Hub-ert/Portfolio/static/css/main.9055c122.css",
-    "main.js": "/Git-Hub-ert/Portfolio/static/js/main.9f7b089d.js",
+    "main.js": "/Git-Hub-ert/Portfolio/static/js/main.fb8553ec.js",
     "static/js/76.03e4e6e8.chunk.js": "/Git-Hub-ert/Portfolio/static/js/76.03e4e6e8.chunk.js",
     "static/js/330.2a000c87.chunk.js": "/Git-Hub-ert/Portfolio/static/js/330.2a000c87.chunk.js",
-    "static/js/940.ddc02536.chunk.js": "/Git-Hub-ert/Portfolio/static/js/940.ddc02536.chunk.js",
+    "static/js/940.dfb1fa65.chunk.js": "/Git-Hub-ert/Portfolio/static/js/940.dfb1fa65.chunk.js",
     "static/js/830.eee2fad2.chunk.js": "/Git-Hub-ert/Portfolio/static/js/830.eee2fad2.chunk.js",
     "static/js/707.b8ded2ea.chunk.js": "/Git-Hub-ert/Portfolio/static/js/707.b8ded2ea.chunk.js",
     "static/js/961.7fd2f7da.chunk.js": "/Git-Hub-ert/Portfolio/static/js/961.7fd2f7da.chunk.js",
@@ -21,10 +21,10 @@
     "static/media/BirdzLogo.png": "/Git-Hub-ert/Portfolio/static/media/BirdzLogo.9c8d34788df07ed3198f.png",
     "index.html": "/Git-Hub-ert/Portfolio/index.html",
     "main.9055c122.css.map": "/Git-Hub-ert/Portfolio/static/css/main.9055c122.css.map",
-    "main.9f7b089d.js.map": "/Git-Hub-ert/Portfolio/static/js/main.9f7b089d.js.map",
+    "main.fb8553ec.js.map": "/Git-Hub-ert/Portfolio/static/js/main.fb8553ec.js.map",
     "76.03e4e6e8.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/76.03e4e6e8.chunk.js.map",
     "330.2a000c87.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/330.2a000c87.chunk.js.map",
-    "940.ddc02536.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/940.ddc02536.chunk.js.map",
+    "940.dfb1fa65.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/940.dfb1fa65.chunk.js.map",
     "830.eee2fad2.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/830.eee2fad2.chunk.js.map",
     "707.b8ded2ea.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/707.b8ded2ea.chunk.js.map",
     "961.7fd2f7da.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/961.7fd2f7da.chunk.js.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.9055c122.css",
-    "static/js/main.9f7b089d.js"
+    "static/js/main.fb8553ec.js"
   ]
 }
