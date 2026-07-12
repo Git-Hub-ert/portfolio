@@ -1,6 +1,7 @@
 # Hubert de Tournay — Portfolio
 
 Personal cybersecurity portfolio built with React.
+Not many commits as it was developed under my former account.
 
 ## Getting Started
 

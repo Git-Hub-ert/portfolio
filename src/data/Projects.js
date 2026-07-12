@@ -1,6 +1,37 @@
 // data/Projects.js
 
 const projectsData = [
+    {
+    id: 'portfolio',
+    title: 'Portfolio',
+    category: 'Web Development',
+    tagline: 'The website you are currently viewing',
+    description: "My most advanced React website up to date, I had to implement things I have never worked with before, making it all the way more interesting to develop.",
+    detailedDescription: `This portfolio is a full-stack web application designed to showcase my skills, experiences and goals. 
+    
+    This project was built using different AIs, mostly to build the skeleton. The whole graphic style was decided by myself, and I chose to add in some extra spice with the D3 graphics you might have stumbled upon. Since the project was pretty big, I had a lot of debugging to do, and it is still a work in progress as I wanted to make it public the sooner I could. `,
+    technologies: ['React', 'Node.js', 'AI', 'Git', 'APIs', 'HTML', 'CSS', 'JavaScript', 'Graphic Design'],
+    role: 'Full-Stack Developer & Team Lead',
+    contributions: [
+      'Used AIs to build the project, had to learn prompt engineering',
+      'Designed and implemented every endpoint',
+      'Incorporated a D3 graph',
+      'Debugged every page and security issues',
+      'Managed the whole SEO'
+    ],
+    timeframe: 'December 2025 - Today',
+    links: [
+      { type: 'GitHub', url: 'https://github.com/Git-Hub-ert/portfolio', label: 'View Source Code' },
+    ],
+    status: 'Ongoing',
+    teamSize: '1 developer',
+    highlights: [
+      'Most complete full-stack React application',
+      'First time working on SEO',
+      'First time implementing an API',
+      'Biggest project to date'
+    ]
+  },
   {
     id: 'battle-x',
     title: 'Battle-X',

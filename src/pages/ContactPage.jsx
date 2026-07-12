@@ -1,7 +1,7 @@
 // ContactPage.jsx
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Mail, Linkedin, Github, MapPin } from 'lucide-react';
+import { Linkedin, Github, MapPin } from 'lucide-react';
 import qrCodeImage from '../assets/LinkedinQRCode.png';
 import emailjs from '@emailjs/browser';
 
@@ -43,12 +43,6 @@ export default function ContactPage() {
   };
 
   const contactLinks = [
-    {
-      icon: Mail,
-      label: 'Emergencies',
-      value: 'hubert@de-tournay.fr',
-      href: 'mailto:hubert@de-tournay.fr',
-    },
     {
       icon: Linkedin,
       label: 'LinkedIn',

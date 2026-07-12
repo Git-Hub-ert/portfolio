@@ -1,6 +1,5 @@
 // components/NetworkPage.jsx
 // Shared component used by both SkillsPage and CertificationsPage.
-// Pass in your data, categories, labels, and render props — this handles
 // all D3 logic, filter state, and layout.
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -95,6 +94,8 @@ export default function NetworkPage({
     svg.attr("class", "network-svg");
     svg.selectAll('*').remove();
 
+    const nodeRadius = d => (d.type === 'center' ? 40 : 25);
+
     const g = svg
       .attr('width', width)
       .attr('height', height)
@@ -127,7 +128,7 @@ export default function NetworkPage({
 
     node
       .append('circle')
-      .attr('r', d => (d.type === 'center' ? 40 : 25))
+      .attr('r', nodeRadius)
       .attr('fill', d => {
         if (d.type === 'center') return D3_COLORS.purple;
         const cat = categories.find(c => c.name === d.category);
@@ -162,6 +163,28 @@ export default function NetworkPage({
       .attr('pointer-events', 'none');
 
     simulation.on('tick', () => {
+      // Keep every node inside the canvas — bounce off the walls instead
+      // of letting the simulation push it out of view.
+      nodes.forEach(d => {
+        const r = nodeRadius(d);
+
+        if (d.x < r) {
+          d.x = r;
+          d.vx = Math.abs(d.vx) * 0.5;
+        } else if (d.x > width - r) {
+          d.x = width - r;
+          d.vx = -Math.abs(d.vx) * 0.5;
+        }
+
+        if (d.y < r) {
+          d.y = r;
+          d.vy = Math.abs(d.vy) * 0.5;
+        } else if (d.y > height - r) {
+          d.y = height - r;
+          d.vy = -Math.abs(d.vy) * 0.5;
+        }
+      });
+
       link
         .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
         .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
