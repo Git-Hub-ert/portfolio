@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Git-Hub-ert/Portfolio/static/css/main.9055c122.css",
-    "main.js": "/Git-Hub-ert/Portfolio/static/js/main.fb8553ec.js",
-    "static/js/76.03e4e6e8.chunk.js": "/Git-Hub-ert/Portfolio/static/js/76.03e4e6e8.chunk.js",
+    "main.js": "/Git-Hub-ert/Portfolio/static/js/main.afc4a663.js",
+    "static/js/359.686d7cf1.chunk.js": "/Git-Hub-ert/Portfolio/static/js/359.686d7cf1.chunk.js",
     "static/js/330.2a000c87.chunk.js": "/Git-Hub-ert/Portfolio/static/js/330.2a000c87.chunk.js",
-    "static/js/940.dfb1fa65.chunk.js": "/Git-Hub-ert/Portfolio/static/js/940.dfb1fa65.chunk.js",
-    "static/js/830.eee2fad2.chunk.js": "/Git-Hub-ert/Portfolio/static/js/830.eee2fad2.chunk.js",
-    "static/js/707.b8ded2ea.chunk.js": "/Git-Hub-ert/Portfolio/static/js/707.b8ded2ea.chunk.js",
-    "static/js/961.7fd2f7da.chunk.js": "/Git-Hub-ert/Portfolio/static/js/961.7fd2f7da.chunk.js",
-    "static/js/822.944b964a.chunk.js": "/Git-Hub-ert/Portfolio/static/js/822.944b964a.chunk.js",
+    "static/js/940.16291794.chunk.js": "/Git-Hub-ert/Portfolio/static/js/940.16291794.chunk.js",
+    "static/js/830.e819633c.chunk.js": "/Git-Hub-ert/Portfolio/static/js/830.e819633c.chunk.js",
+    "static/js/707.2f32a8fe.chunk.js": "/Git-Hub-ert/Portfolio/static/js/707.2f32a8fe.chunk.js",
+    "static/js/961.43f4af35.chunk.js": "/Git-Hub-ert/Portfolio/static/js/961.43f4af35.chunk.js",
+    "static/js/822.3237ab01.chunk.js": "/Git-Hub-ert/Portfolio/static/js/822.3237ab01.chunk.js",
     "static/js/23.990f1992.chunk.js": "/Git-Hub-ert/Portfolio/static/js/23.990f1992.chunk.js",
     "static/js/409.553a68af.chunk.js": "/Git-Hub-ert/Portfolio/static/js/409.553a68af.chunk.js",
     "static/js/453.3f1fb51b.chunk.js": "/Git-Hub-ert/Portfolio/static/js/453.3f1fb51b.chunk.js",
@@ -21,14 +21,14 @@
     "static/media/BirdzLogo.png": "/Git-Hub-ert/Portfolio/static/media/BirdzLogo.9c8d34788df07ed3198f.png",
     "index.html": "/Git-Hub-ert/Portfolio/index.html",
     "main.9055c122.css.map": "/Git-Hub-ert/Portfolio/static/css/main.9055c122.css.map",
-    "main.fb8553ec.js.map": "/Git-Hub-ert/Portfolio/static/js/main.fb8553ec.js.map",
-    "76.03e4e6e8.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/76.03e4e6e8.chunk.js.map",
+    "main.afc4a663.js.map": "/Git-Hub-ert/Portfolio/static/js/main.afc4a663.js.map",
+    "359.686d7cf1.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/359.686d7cf1.chunk.js.map",
     "330.2a000c87.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/330.2a000c87.chunk.js.map",
-    "940.dfb1fa65.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/940.dfb1fa65.chunk.js.map",
-    "830.eee2fad2.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/830.eee2fad2.chunk.js.map",
-    "707.b8ded2ea.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/707.b8ded2ea.chunk.js.map",
-    "961.7fd2f7da.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/961.7fd2f7da.chunk.js.map",
-    "822.944b964a.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/822.944b964a.chunk.js.map",
+    "940.16291794.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/940.16291794.chunk.js.map",
+    "830.e819633c.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/830.e819633c.chunk.js.map",
+    "707.2f32a8fe.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/707.2f32a8fe.chunk.js.map",
+    "961.43f4af35.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/961.43f4af35.chunk.js.map",
+    "822.3237ab01.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/822.3237ab01.chunk.js.map",
     "23.990f1992.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/23.990f1992.chunk.js.map",
     "409.553a68af.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/409.553a68af.chunk.js.map",
     "453.3f1fb51b.chunk.js.map": "/Git-Hub-ert/Portfolio/static/js/453.3f1fb51b.chunk.js.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.9055c122.css",
-    "static/js/main.fb8553ec.js"
+    "static/js/main.afc4a663.js"
   ]
 }
