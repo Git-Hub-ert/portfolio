@@ -5,6 +5,20 @@
    =========================== */
 
 /* ===========================
+   BOX-SIZING RESET
+   Without this, any element that gets a % or stretched width (flex/grid
+   children, 100%-width containers, etc.) and also has padding or a border
+   ends up rendering WIDER than its box, because padding/border are added
+   on top of the width instead of being included in it. That's what was
+   causing horizontal scrolling / clipped cards on mobile.
+   =========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ===========================
    ANIMATIONS
    =========================== */
 
@@ -336,6 +350,7 @@ label {
 }
 
 .category-card {
+  min-width: 0;
   padding: var(--spacing-lg);
   background: var(--color-card-surface);
   backdrop-filter: blur(10px);
@@ -367,6 +382,7 @@ label {
   font-weight: 600;
   color: var(--color-text-primary);
   margin-bottom: var(--spacing-sm);
+  overflow-wrap: break-word;
 }
 
 .skill-count {

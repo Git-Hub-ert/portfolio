@@ -44,16 +44,16 @@ export default function ContactPage() {
 
   const contactLinks = [
     {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      value: 'linkedin.com',
-      href: 'https://www.linkedin.com/in/hubert-de-tournay/',
-    },
-    {
       icon: Github,
       label: 'GitHub',
       value: 'github.com/Git-Hub-ert',
       href: 'https://github.com/Git-Hub-ert',
+    },
+    {
+      icon: Linkedin,
+      label: 'LinkedIn',
+      value: 'linkedin.com',
+      href: 'https://www.linkedin.com/in/hubert-de-tournay/',
     },
   ];
 
