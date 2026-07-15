@@ -1,11 +1,10 @@
 // Navigation.jsx
 import React, { useState, useEffect } from 'react';
 import { Shield, Menu, X } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Navigation() {
-  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -89,6 +88,10 @@ export default function Navigation() {
               {link.name}
             </Link>
           ))}
+          <div className="mobile-theme-switcher-row">
+            <span className="mobile-theme-switcher-label">Theme</span>
+            <ThemeSwitcher />
+          </div>
         </div>
       )}
     </nav>

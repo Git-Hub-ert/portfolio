@@ -163,6 +163,19 @@ nav {
   color: var(--color-accent);
 }
 
+.mobile-theme-switcher-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+}
+
+.mobile-theme-switcher-label {
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
   .desktop-nav { display: none; }
   .mobile-menu-button { display: block; }
@@ -442,7 +455,9 @@ label {
 
 .network-svg {
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
+  touch-action: none; /* let d3-zoom handle pinch/pan instead of the page scroller */
+  cursor: grab;
 }
 
 .network-description {
@@ -453,12 +468,45 @@ label {
 }
 
 .network-container {
+  position: relative;
   background: var(--color-network-bg);
   backdrop-filter: blur(10px);
   border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: var(--spacing-lg);
   margin-bottom: var(--spacing-xxl);
+  overflow: hidden;
+}
+
+.network-zoom-controls {
+  position: absolute;
+  right: calc(var(--spacing-lg) + 8px);
+  bottom: calc(var(--spacing-lg) + 8px);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 1;
+}
+
+.zoom-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--color-text-primary);
+  background: var(--color-card-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.zoom-btn:hover {
+  background: var(--color-accent-tint-15);
+  border-color: var(--color-accent);
 }
 
 .network-legend {

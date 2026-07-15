@@ -41,6 +41,7 @@ export default function NetworkPage({
   const [selectedItem, setSelectedItem]         = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const svgRef = useRef();
+  const zoomRef = useRef(null); // holds the d3-zoom behavior so the +/-/reset buttons can drive it
 
   const categoryGroups = {};
   data.forEach(item => {
@@ -57,8 +58,28 @@ export default function NetworkPage({
   // ── D3 setup (runs once) ──────────────────────────────────────────────────
   useEffect(() => {
     if (!svgRef.current) return;
-    const width  = svgRef.current.clientWidth;
-    const height = 600;
+
+    // Apply the class (which sets width:100%) BEFORE measuring clientWidth —
+    // otherwise we measure the element while it's still unstyled/un-sized.
+    const svg = d3.select(svgRef.current);
+    svg.attr("class", "network-svg");
+    svg.selectAll('*').remove();
+
+    const containerWidth = svgRef.current.clientWidth;
+
+    // The simulation's canvas is the "room" nodes are allowed to spread out
+    // in. It must NOT just be the screen's pixel size — on a phone that's
+    // only ~390px wide, so a couple dozen nodes would be forced to overlap
+    // no matter how far you zoom out (zooming only changes how big that
+    // cramped room *looks*, not how much room there actually is).
+    // Instead we size the canvas from the node count itself, so there's
+    // always enough physical space for the nodes to settle without
+    // colliding, and let pan/zoom be how you navigate that space.
+    const nodeCount = data.length + 1; // +1 for the center "Hubert" node
+    const areaPerNode = 9000; // px² per node — tuned for radius ~25-40 circles plus label breathing room
+    const canvasSide = Math.sqrt(nodeCount * areaPerNode);
+    const width  = Math.max(containerWidth, canvasSide);
+    const height = Math.max(600, canvasSide);
 
     const nodes = [
       { id: 'Hubert', label: 'Hubert', type: 'center', category: 'center' },
@@ -90,19 +111,51 @@ export default function NetworkPage({
       .force('center',    d3.forceCenter(width / 2, height / 2))
       .force('collision', d3.forceCollide().radius(40));
 
-    const svg = d3.select(svgRef.current);
-    svg.attr("class", "network-svg");
-    svg.selectAll('*').remove();
-
     const nodeRadius = d => (d.type === 'center' ? 40 : 25);
 
-    const g = svg
+
+    svg
       .attr('width', width)
       .attr('height', height)
       .attr('viewBox', `0 0 ${width} ${height}`)
       .attr('role', 'img')
       .attr('aria-label', `Network diagram showing how ${heroTitle.toLowerCase()} connect and relate`)
-      .append('g');
+      .style('touch-action', 'none') // let d3-zoom own touch gestures instead of the page scroller
+      // Unlike <img>, an <svg>'s height attribute doesn't auto-scale to keep
+      // the aspect ratio once CSS width is overridden to 100% — it's just
+      // read as a literal fixed CSS pixel height. Setting aspect-ratio
+      // explicitly is what makes the canvas actually render as intended
+      // (e.g. square) instead of stretched/squashed to fit the container.
+      .style('aspect-ratio', `${width} / ${height}`)
+      .style('height', 'auto');
+
+    // The zoomable layer — panning/zooming just transforms this <g>, the
+    // node/link drawing code below doesn't need to know zoom exists at all.
+    const g = svg.append('g');
+
+    // Pinch-to-zoom on touch, scroll/trackpad-zoom on desktop, drag-to-pan
+    // on empty canvas. Node dragging (below) still works normally — d3-drag
+    // stops the event from also reaching d3-zoom, so the two don't fight.
+    const zoom = d3
+      .zoom()
+      .scaleExtent([0.5, 6])
+      .on('zoom', (event) => {
+        g.attr('transform', event.transform);
+      });
+
+    svg.call(zoom);
+    zoomRef.current = zoom;
+
+    // iOS Safari fires its own proprietary gesture* events for two-finger
+    // pinches and can hijack them into zooming the whole page even when
+    // touch-action:none is set on the target. Blocking the native gesture
+    // here forces the pinch through as regular multi-touch events instead,
+    // which is what d3-zoom listens for.
+    const svgNode = svgRef.current;
+    const preventNativeGesture = (event) => event.preventDefault();
+    svgNode.addEventListener('gesturestart', preventNativeGesture);
+    svgNode.addEventListener('gesturechange', preventNativeGesture);
+    svgNode.addEventListener('gestureend', preventNativeGesture);
 
     const link = g
       .selectAll('line')
@@ -191,7 +244,12 @@ export default function NetworkPage({
       node.attr('transform', d => `translate(${d.x},${d.y})`);
     });
 
-    return () => simulation.stop();
+    return () => {
+      simulation.stop();
+      svgNode.removeEventListener('gesturestart', preventNativeGesture);
+      svgNode.removeEventListener('gesturechange', preventNativeGesture);
+      svgNode.removeEventListener('gestureend', preventNativeGesture);
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // intentionally runs once — data and categories are stable module references
 
@@ -236,6 +294,21 @@ export default function NetworkPage({
   const handleClearFilters = () => {
     setSelectedItem(null);
     setSelectedCategory(null);
+  };
+
+  const handleZoomIn = () => {
+    if (!svgRef.current || !zoomRef.current) return;
+    d3.select(svgRef.current).transition().duration(200).call(zoomRef.current.scaleBy, 1.4);
+  };
+
+  const handleZoomOut = () => {
+    if (!svgRef.current || !zoomRef.current) return;
+    d3.select(svgRef.current).transition().duration(200).call(zoomRef.current.scaleBy, 1 / 1.4);
+  };
+
+  const handleResetZoom = () => {
+    if (!svgRef.current || !zoomRef.current) return;
+    d3.select(svgRef.current).transition().duration(300).call(zoomRef.current.transform, d3.zoomIdentity);
   };
 
   return (
@@ -301,9 +374,37 @@ export default function NetworkPage({
         <p className="network-description">{networkDescription}</p>
         <div className="network-container">
           <svg ref={svgRef} />
+          <div className="network-zoom-controls">
+            <button
+              type="button"
+              className="zoom-btn"
+              onClick={handleZoomIn}
+              aria-label="Zoom in"
+            >
+              +
+            </button>
+            <button
+              type="button"
+              className="zoom-btn"
+              onClick={handleZoomOut}
+              aria-label="Zoom out"
+            >
+              −
+            </button>
+            <button
+              type="button"
+              className="zoom-btn"
+              onClick={handleResetZoom}
+              aria-label="Reset zoom"
+            >
+              ⟲
+            </button>
+          </div>
         </div>
         <div className="network-legend">
-          <p className="legend-title">Click on any node to explore its connections. Drag to reposition.</p>
+          <p className="legend-title">
+            Pinch or scroll to zoom, drag the background to pan, drag a node to reposition. Click a node to explore its connections.
+          </p>
           {selectedItem && renderSelectedLegend(selectedItem)}
         </div>
       </section>
