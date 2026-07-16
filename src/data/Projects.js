@@ -112,7 +112,7 @@ const projectsData = [
     
     This project required creating organizational charts, financial projections, IT knowledge, questioning and operational procedures. It demonstrated my ability to think beyond technical implementation and understand the business context in which technology operates.
     
-    Working on such a long project helped me develop crucial soft skills including strategic planning, and understanding how IT departments integrate with broader organizational goals - essential knowledge for any futur CISO.`,
+    Working on such a long project helped me develop crucial soft skills including strategic planning, and understanding how IT departments integrate with broader organizational goals - essential knowledge for any future CISO.`,
     technologies: ['Project Management', 'Microsoft Office', 'Presentation Tools'],
     role: 'Project Manager & Network Administrator',
     contributions: [
@@ -143,13 +143,13 @@ const projectsData = [
     I began as a volunteer in these events and helped guide athletes and visitors. In the last meet though, I had the chance to run the secretary, the single most critical job in the whole competition, before enjoying handling transitions during the live stream.
     Such important events never come with 0 issue, so this made me develop multiple soft skills such as keeping a high quality work even under pressure and prioritizing services to get back up after a power failure.
     It also strengthened my own technical skills as I had to thoroughly understand each challenge to help troubleshoot issues and provide hints to participants.`,
-    technologies: ['OBS Studio', 'Advising', 'Team Management', 'Priority Management', 'Event Management', 'Idea Forstering'],
+    technologies: ['OBS Studio', 'Advising', 'Team Management', 'Priority Management', 'Event Management', 'Idea Fostering'],
     role: 'Volunteer and Team Leader at times of need',
     contributions: [
       'Guided athletes and visitors',
       'Set up and maintained competition infrastructure',
       'Prioritized on services to put back into good',
-      'Managed the whole warming room dissassembly stage',
+      'Managed the whole warming room disassembly stage',
       'Ran the secretary job'
     ],
     timeframe: 'September 2023 - Present',

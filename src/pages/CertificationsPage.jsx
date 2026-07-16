@@ -26,7 +26,7 @@ export default function CertificationsPage() {
       gridClass="certifications-grid"
       // Hero
       heroTitle="My Certifications"
-      introduction="A collection of certifications that validate my expertise across various domains. Each certification represents dedicated learning and hands-on experience in its respective field. Click on any card to view or download the certification document."
+      introduction="A collection of certifications that validate my expertise across various domains. Each certification represents dedicated learning and hands-on experience in its respective field."
       // Data
       data={certificationsData}
       categories={categories}

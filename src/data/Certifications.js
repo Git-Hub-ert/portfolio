@@ -5,8 +5,7 @@ const certificationsData = [
     category: "Security", 
     connections: ["fortinet", "cissp", "ethicalHacker"], 
     obtained: "2023", 
-    summary: "Based on ANSSI (French National Cybersecurity Agency) standards...",
-    document: "/Certifications/FrenchInstitutions/attestation_anssi.pdf"
+    summary: "Based on ANSSI (French National Cybersecurity Agency) standards..."
   },
   { 
     id: "fortinet",
@@ -14,8 +13,7 @@ const certificationsData = [
     category: "Security",
     connections: ["anssi", "cissp"],
     obtained: "2023",
-    summary: "Provides foundational knowledge on cybersecurity best practices...",
-    document: "/Certifications/Fortinet/Course_Completion_Certificate.pdf"
+    summary: "Provides foundational knowledge on cybersecurity best practices..."
   },
   { 
     id: "cissp",
@@ -23,8 +21,7 @@ const certificationsData = [
     category: "Security",
     connections: ["ethicalHacker", "fortinet"],
     obtained: "2023",
-    summary: "Comprehensive CISSP-oriented training",
-    document: "/Certifications/MasterOfProjectAcademy/certificate-of-completion-for-free-cissp-training.pdf"
+    summary: "Comprehensive CISSP-oriented training"
   },
   { 
     id: "ethicalHacker",

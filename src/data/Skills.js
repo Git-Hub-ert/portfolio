@@ -1,7 +1,7 @@
 const skillsData = [
-  { id: "Cloud Computing", name: "Cloud Computing", category: "Cloud", connections: ["Google Cloud Plateform", "Amazon Web Services", "Terraform"], learned: '2024' },
-  { id: "Google Cloud Plateform", name: "Google Cloud Plateform", category: "Cloud", connections: ["Cloud Computing", "Amazon Web Services", "Terraform"], learned: '2024'},
-  { id: "Amazon Web Services", name: "Amazon Web Services", category: "Cloud", connections: ["Cloud Computing", "Google Cloud Plateform"], learned: '2025' }, 
+  { id: "Cloud Computing", name: "Cloud Computing", category: "Cloud", connections: ["Google Cloud Platform", "Amazon Web Services", "Terraform"], learned: '2024' },
+  { id: "Google Cloud Platform", name: "Google Cloud Plateform", category: "Cloud", connections: ["Cloud Computing", "Amazon Web Services", "Terraform"], learned: '2024'},
+  { id: "Amazon Web Services", name: "Amazon Web Services", category: "Cloud", connections: ["Cloud Computing", "Google Cloud Platform"], learned: '2025' }, 
   { id: "Docker", name: "Docker", category: "DevOps", connections: ["Cloud Computing", "Terraform"], learned: '2025' },
   { id: "Terraform", name: "Terraform", category: "DevOps", connections: ["Cloud Computing", "Docker"], learned: '2024'},
   { id: "Monitoring", learned: '2023', name: "Monitoring", category: "DevOps", connections: ["CheckMK", "System Administration"] },
