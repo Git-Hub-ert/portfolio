@@ -62,7 +62,9 @@ export default function SkillsPage() {
             >
               {skill.category}
             </div>
-            <span className="learned-date">{skill.learned}</span>
+            {(skill.level || skill.learned) && (
+              <span className="learned-date">{skill.level || skill.learned}</span>
+            )}
           </div>
 
           <h3 className="skill-name">{skill.name}</h3>

@@ -12,20 +12,20 @@ import ValboisLogo from '../assets/CompanyLogos/ValboisLogo.png';
 export default function ExperiencePage() {
   const Jobs = [
     {
+      title: 'CISO Apprentice',
+      company: 'Veolia Connected Solutions',
+      date: 'Sep 2026 - Sep 2028',
+      place: 'Lyon, France',
+      description: 'I work in the cybersecurity team on governance, risk and compliance alongside my engineering degree. I automate security and reporting tasks (Terraform, Google Cloud, Apps Script, BigQuery, Jira), run cybersecurity onboarding for new employees (awareness training, a knowledge test and the security documents they sign), monitor security KPIs such as authorised USB devices and access rights, and track vulnerabilities by opening remediation tickets and helping users fix them.',
+      logo: BirdzLogo,
+    },
+    {
       title: 'IT advisor',
       company: 'Valbois',
-      date: 'Dec 2025 - June 2026',
+      date: 'Dec 2025 - Jun 2026',
       place: 'Lyon, France',
       description: 'Worked as the only IT professional in a small company. Solved tickets for the users, did the configuration of the company\'s digital environment, developed a tool to automatically obtain potential clients contact details in a specific zone.',
       logo: ValboisLogo,
-    },
-    {
-      title: 'CISO Apprentice (Upcoming)',
-      company: 'Véolia - Birdz',
-      date: 'Sep 2026 - Sep 2028',
-      place: 'Lyon, France',
-      description: 'Starting September 2026. I will be joining the Birdz cybersecurity team as a CISO apprentice, working on governance, risk, and compliance while completing my engineering degree.',
-      logo: BirdzLogo,
     },
   ];
 
@@ -35,12 +35,12 @@ export default function ExperiencePage() {
       company: 'Humanity & Inclusion',
       date: 'Jun 2023 - Jul 2023',
       place: 'Lyon, France',
-      description: 'Analyzed 30+ IT monitoring tools, gathered vendor input, and evaluated them using MuSCoW, SWOT, and SMART methods. Deployed and configured a CheckMK monitoring server after negotiating a reduced licensing price.',
+      description: 'Analyzed 30+ IT monitoring tools, gathered vendor input, and evaluated them using MoSCoW, SWOT, and SMART methods. Deployed and configured a CheckMK monitoring server after negotiating a reduced licensing price.',
       logo: HILogo,
     },
     {
       title: 'Phishing Attack Prevention',
-      company: 'Véolia - Birdz',
+      company: 'Veolia Connected Solutions (formerly Birdz)',
       date: 'Feb 2024 - Apr 2024',
       place: 'Lyon, France',
       description: 'Built and ran a phishing awareness campaign on Google Cloud (300 users). Created phishing emails and sites, analyzed results (10% victim rate), trained employees, and cut organizational risk by half.',
@@ -68,7 +68,7 @@ export default function ExperiencePage() {
     {
       title: 'Store Employee',
       company: 'La Cagette des Gônes',
-      date: 'Jan 2024 - September 2024',
+      date: 'Jan 2024 - Sep 2024',
       place: 'Lyon, France',
       description: 'Added new products to inventory, advised customers, handled payments, and managed stock organization. Ensured customer satisfaction and contributed to daily shop operations.',
       logo: CagetteLogo,
@@ -93,7 +93,7 @@ export default function ExperiencePage() {
       <section className="section">
         <h2 className="section-title">Jobs</h2>
         <p className="section-subtitle">
-          IT paid works
+          Paid IT positions
         </p>
 
         <div className="buttons-container">

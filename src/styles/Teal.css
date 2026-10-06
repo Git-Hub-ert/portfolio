@@ -10,6 +10,7 @@ html[data-theme="teal"] {
   --color-accent-secondary: #FF7A59;
   --color-accent-secondary-light: #FFCAB8;
   --color-on-accent: #ffffff;
+  --color-link: #0B7F75;
 
   /* Accent tints (translucent backgrounds for badges/tags/icons) */
   --color-accent-tint-10: rgba(13, 148, 136, 0.1);
