@@ -39,7 +39,7 @@ export default function LandingPage() {
     {
       icon: Award,
       title: 'Certifications',
-      description: "Explore the certifications that validate my expertise.",
+      description: "Certifications, training and awareness courses I have completed.",
       path: '/certifications',
     },
     {

@@ -1,35 +1,38 @@
 // data/Projects.js
 
 const projectsData = [
-    {
+        {
     id: 'portfolio',
     title: 'Portfolio',
     category: 'Web Development',
     tagline: 'The website you are currently viewing',
-    description: "My most advanced React website up to date, I had to implement things I have never worked with before, making it all the way more interesting to develop.",
-    detailedDescription: `This portfolio is a full-stack web application designed to showcase my skills, experiences and goals. 
-    
-    This project was built using different AIs, mostly to build the skeleton. The whole graphic style was decided by myself, and I chose to add in some extra spice with the D3 graphics you might have stumbled upon. Since the project was pretty big, I had a lot of debugging to do, and it is still a work in progress as I wanted to make it public the sooner I could. `,
-    technologies: ['React', 'Node.js', 'AI', 'Git', 'APIs', 'HTML', 'CSS', 'JavaScript', 'Graphic Design'],
-    role: 'Full-Stack Developer & Team Lead',
+    description: "My most complete React website to date. Building it meant learning things I had never worked with before, which made it all the more interesting to develop.",
+    detailedDescription: `This portfolio is a single-page React application, deployed as a static site on GitHub Pages with my own domain. There is no back end: the contact form sends messages through EmailJS, a third-party email service. Keeping the site static also means there is no server to maintain or attack.
+
+    I used AI assistants to scaffold the project, then designed the visual style myself and reviewed, adapted and debugged the generated code. The parts I am proudest of are the interactive D3 graphs on the Skills and Certifications pages, which needed specific work to stay usable on phones, and the dark and light themes built on CSS variables.
+
+    The site is a work in progress: I published it as soon as I could, and I keep improving it, especially its accessibility and security hardening.`,
+    technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'D3.js', 'EmailJS', 'Git', 'GitHub Pages', 'AI Assistants', 'Graphic Design'],
+    role: 'Designer & Developer',
     contributions: [
-      'Used AIs to build the project, had to learn prompt engineering',
-      'Designed and implemented every endpoint',
-      'Incorporated a D3 graph',
-      'Debugged every page and security issues',
-      'Managed the whole SEO'
+      'Used AI assistants to scaffold the project, then reviewed, adapted and debugged the generated code',
+      'Designed the visual identity and the dark and light themes using CSS variables',
+      'Built interactive D3 force graphs with zoom, pan and drag, adapted for mobile screens',
+      'Set up SEO: per-page meta tags, structured data (JSON-LD), sitemap and robots.txt',
+      'Integrated a contact form through EmailJS, with a honeypot field against spam bots',
+      'Deployed the site on GitHub Pages with a custom domain'
     ],
-    timeframe: 'December 2025 - Today',
+    timeframe: 'Dec 2025 - Present',
     links: [
       { type: 'GitHub', url: 'https://github.com/Git-Hub-ert/portfolio', label: 'View Source Code' },
     ],
     status: 'Ongoing',
-    teamSize: '1 developer',
+    teamSize: 'Solo project',
     highlights: [
-      'Most complete full-stack React application',
+      'My most complete React application to date',
       'First time working on SEO',
-      'First time implementing an API',
-      'Biggest project to date'
+      'First interactive data visualization (D3)',
+      'Learned to work effectively with AI coding assistants'
     ]
   },
   {
