@@ -156,7 +156,7 @@ export default function ProjectsPage() {
                       onClick={(e) => e.stopPropagation()}
                     >
                       {getLinkIcon(link.type)}
-                      <span>{link.type}</span>
+                      <span>{link.shortLabel || link.type}</span>
                     </a>
                   ))}
                 </div>

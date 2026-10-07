@@ -139,34 +139,35 @@ const projectsData = [
     id: 'powerlifting-meet',
     title: 'Sports Competitions Organization',
     category: 'Event Management',
-    tagline: 'Organized multiple Powerlifting competitions',
-    description: 'Organized multiple powerlifting competitions, some as a simple volunteer, others as part of the organization team.',
-    detailedDescription: `As part of my commitment to my association, I organized and managed 4 different competitions.
-    
-    I began as a volunteer in these events and helped guide athletes and visitors. In the last meet though, I had the chance to run the secretary, the single most critical job in the whole competition, before enjoying handling transitions during the live stream.
-    Such important events never come with 0 issue, so this made me develop multiple soft skills such as keeping a high quality work even under pressure and prioritizing services to get back up after a power failure.
-    It also strengthened my own technical skills as I had to thoroughly understand each challenge to help troubleshoot issues and provide hints to participants.`,
-    technologies: ['OBS Studio', 'Advising', 'Team Management', 'Priority Management', 'Event Management', 'Idea Fostering'],
-    role: 'Volunteer and Team Leader at times of need',
+    tagline: 'Helped organize and run 7 powerlifting competitions',
+    description: 'Helped organize powerlifting competitions, first as a volunteer, then as part of the organizing team, and now running the livestream.',
+    detailedDescription: `As a member of my powerlifting association, I have helped organize and run 7 competitions, each welcoming around 300 athletes on average and involving 20 to 40 organizers and volunteers.
+
+    I started as a volunteer, guiding athletes and visitors. At a later meet, I ran the meet secretariat, which records every attempt and result and is one of the most critical roles during a competition. I now also run the livestream: choosing which camera to show, managing transitions and updating the on-screen overlays.
+
+    Events of this size never run without issues. They taught me to keep the quality of my work high under pressure and to set priorities quickly, for example deciding which services to restore first after a power failure.`,
+    technologies: ['OBS Studio', 'Live Video Production'],
+    role: 'Volunteer, then member of the organizing team',
     contributions: [
       'Guided athletes and visitors',
       'Set up and maintained competition infrastructure',
-      'Prioritized on services to put back into good',
-      'Managed the whole warming room disassembly stage',
-      'Ran the secretary job'
+      'Prioritized which services to restore first after a power failure',
+      'Managed the disassembly of the warm-up room',
+      'Ran the meet secretariat (scoring table)',
+      'Running the livestream production in OBS Studio: camera selection, transitions and overlays'
     ],
-    timeframe: 'September 2023 - Present',
+    timeframe: 'Sep 2023 - Present',
     links: [
-      { type: 'youtube', url: 'https://www.youtube.com/watch?v=QXyE6-H1Qv8', label: 'Youtube' },
-      { type: 'youtube', url: 'https://www.youtube.com/watch?v=Xw9bL8XHsdY&t=30459s&pp=ygUSc2lsZW50IHdvcmtlciBtZWV0', label: 'Youtube' }
+      { type: 'YouTube', url: 'https://www.youtube.com/watch?v=QXyE6-H1Qv8', label: 'Livestream: Lyon Powermeet 2025', shortLabel: 'Lyon 2025' },
+      { type: 'YouTube', url: 'https://www.youtube.com/watch?v=Xw9bL8XHsdY&t=30459s', label: 'Livestream: Silent Worker Meet, Winter Edition 2024', shortLabel: 'Silent Worker 2024' }
     ],
     status: 'Ongoing',
-    teamSize: '300 athletes',
+    teamSize: '20–40 people per meet',
     highlights: [
       'Team leadership',
       'Conflict resolution',
       'Event management experience',
-      'Technical challenge design'
+      'Live video production'
     ]
   }
 ];
