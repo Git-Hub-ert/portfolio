@@ -158,7 +158,7 @@ const projectsData = [
     ],
     timeframe: 'Sep 2023 - Present',
     links: [
-      { type: 'YouTube', url: 'https://www.youtube.com/watch?v=QXyE6-H1Qv8', label: 'Livestream: Lyon Powermeet 2025', shortLabel: 'Lyon 2025' },
+      { type: 'YouTube', url: 'https://www.youtube.com/watch?v=QXyE6-H1Qv8', label: 'Livestream: Lyon Powermeet 2025', shortLabel: 'LPM 2025' },
       { type: 'YouTube', url: 'https://www.youtube.com/watch?v=Xw9bL8XHsdY&t=30459s', label: 'Livestream: Silent Worker Meet, Winter Edition 2024', shortLabel: 'Silent Worker 2024' }
     ],
     status: 'Ongoing',
