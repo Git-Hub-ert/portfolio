@@ -50,7 +50,7 @@ export default function ProjectsPage() {
         <h1 className="hero-title">My Projects</h1>
         <p className="introduction">
           A collection of projects showcasing my technical skills, creativity, and problem-solving abilities.
-          From full-stack web applications to security tools and event management, each project represents
+          From web applications to security tools and event management, each project represents
           hands-on experience and continuous learning.
         </p>
       </section>
@@ -156,7 +156,7 @@ export default function ProjectsPage() {
                       onClick={(e) => e.stopPropagation()}
                     >
                       {getLinkIcon(link.type)}
-                      <span>{link.type}</span>
+                      <span>{link.shortLabel || link.type}</span>
                     </a>
                   ))}
                 </div>

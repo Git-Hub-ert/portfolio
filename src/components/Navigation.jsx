@@ -22,7 +22,7 @@ export default function Navigation() {
     { name: 'Skills',         path: '/skills' },
     { name: 'Certifications', path: '/certifications' },
     { name: 'Projects',       path: '/projects' },
-    { name: 'Learn More',     path: '/learn-more' },
+//    { name: 'Learn More',     path: '/learn-more' },
     { name: 'Contact',        path: '/contact' },
   ];
 

@@ -1,35 +1,38 @@
 // data/Projects.js
 
 const projectsData = [
-    {
+        {
     id: 'portfolio',
     title: 'Portfolio',
     category: 'Web Development',
     tagline: 'The website you are currently viewing',
-    description: "My most advanced React website up to date, I had to implement things I have never worked with before, making it all the way more interesting to develop.",
-    detailedDescription: `This portfolio is a full-stack web application designed to showcase my skills, experiences and goals. 
-    
-    This project was built using different AIs, mostly to build the skeleton. The whole graphic style was decided by myself, and I chose to add in some extra spice with the D3 graphics you might have stumbled upon. Since the project was pretty big, I had a lot of debugging to do, and it is still a work in progress as I wanted to make it public the sooner I could. `,
-    technologies: ['React', 'Node.js', 'AI', 'Git', 'APIs', 'HTML', 'CSS', 'JavaScript', 'Graphic Design'],
-    role: 'Full-Stack Developer & Team Lead',
+    description: "My most complete React website to date. Building it meant learning things I had never worked with before, which made it all the more interesting to develop.",
+    detailedDescription: `This portfolio is a single-page React application, deployed as a static site on GitHub Pages with my own domain. There is no back end: the contact form sends messages through EmailJS, a third-party email service. Keeping the site static also means there is no server to maintain or attack.
+
+    I used AI assistants to scaffold the project, then designed the visual style myself and reviewed, adapted and debugged the generated code. The parts I am proudest of are the interactive D3 graphs on the Skills and Certifications pages, which needed specific work to stay usable on phones, and the dark and light themes built on CSS variables.
+
+    The site is a work in progress: I published it as soon as I could, and I keep improving it, especially its accessibility and security hardening.`,
+    technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'D3.js', 'EmailJS', 'Git', 'GitHub Pages', 'AI Assistants', 'Graphic Design'],
+    role: 'Designer & Developer',
     contributions: [
-      'Used AIs to build the project, had to learn prompt engineering',
-      'Designed and implemented every endpoint',
-      'Incorporated a D3 graph',
-      'Debugged every page and security issues',
-      'Managed the whole SEO'
+      'Used AI assistants to scaffold the project, then reviewed, adapted and debugged the generated code',
+      'Designed the visual identity and the dark and light themes using CSS variables',
+      'Built interactive D3 force graphs with zoom, pan and drag, adapted for mobile screens',
+      'Set up SEO: per-page meta tags, structured data (JSON-LD), sitemap and robots.txt',
+      'Integrated a contact form through EmailJS, with a honeypot field against spam bots',
+      'Deployed the site on GitHub Pages with a custom domain'
     ],
-    timeframe: 'December 2025 - Today',
+    timeframe: 'Dec 2025 - Present',
     links: [
       { type: 'GitHub', url: 'https://github.com/Git-Hub-ert/portfolio', label: 'View Source Code' },
     ],
     status: 'Ongoing',
-    teamSize: '1 developer',
+    teamSize: 'Solo project',
     highlights: [
-      'Most complete full-stack React application',
+      'My most complete React application to date',
       'First time working on SEO',
-      'First time implementing an API',
-      'Biggest project to date'
+      'First interactive data visualization (D3)',
+      'Learned to work effectively with AI coding assistants'
     ]
   },
   {
@@ -136,34 +139,35 @@ const projectsData = [
     id: 'powerlifting-meet',
     title: 'Sports Competitions Organization',
     category: 'Event Management',
-    tagline: 'Organized multiple Powerlifting competitions',
-    description: 'Organized multiple powerlifting competitions, some as a simple volunteer, others as part of the organization team.',
-    detailedDescription: `As part of my commitment to my association, I organized and managed 4 different competitions.
-    
-    I began as a volunteer in these events and helped guide athletes and visitors. In the last meet though, I had the chance to run the secretary, the single most critical job in the whole competition, before enjoying handling transitions during the live stream.
-    Such important events never come with 0 issue, so this made me develop multiple soft skills such as keeping a high quality work even under pressure and prioritizing services to get back up after a power failure.
-    It also strengthened my own technical skills as I had to thoroughly understand each challenge to help troubleshoot issues and provide hints to participants.`,
-    technologies: ['OBS Studio', 'Advising', 'Team Management', 'Priority Management', 'Event Management', 'Idea Fostering'],
-    role: 'Volunteer and Team Leader at times of need',
+    tagline: 'Helped organize and run 7 powerlifting competitions',
+    description: 'Helped organize powerlifting competitions, first as a volunteer, then as part of the organizing team, and now running the livestream.',
+    detailedDescription: `As a member of my powerlifting association, I have helped organize and run 7 competitions, each welcoming around 300 athletes on average and involving 20 to 40 organizers and volunteers.
+
+    I started as a volunteer, guiding athletes and visitors. At a later meet, I ran the meet secretariat, which records every attempt and result and is one of the most critical roles during a competition. I now also run the livestream: choosing which camera to show, managing transitions and updating the on-screen overlays.
+
+    Events of this size never run without issues. They taught me to keep the quality of my work high under pressure and to set priorities quickly, for example deciding which services to restore first after a power failure.`,
+    technologies: ['OBS Studio', 'Live Video Production'],
+    role: 'Volunteer, then member of the organizing team',
     contributions: [
       'Guided athletes and visitors',
       'Set up and maintained competition infrastructure',
-      'Prioritized on services to put back into good',
-      'Managed the whole warming room disassembly stage',
-      'Ran the secretary job'
+      'Prioritized which services to restore first after a power failure',
+      'Managed the disassembly of the warm-up room',
+      'Ran the meet secretariat (scoring table)',
+      'Running the livestream production in OBS Studio: camera selection, transitions and overlays'
     ],
-    timeframe: 'September 2023 - Present',
+    timeframe: 'Sep 2023 - Present',
     links: [
-      { type: 'youtube', url: 'https://www.youtube.com/watch?v=QXyE6-H1Qv8', label: 'Youtube' },
-      { type: 'youtube', url: 'https://www.youtube.com/watch?v=Xw9bL8XHsdY&t=30459s&pp=ygUSc2lsZW50IHdvcmtlciBtZWV0', label: 'Youtube' }
+      { type: 'YouTube', url: 'https://www.youtube.com/watch?v=QXyE6-H1Qv8', label: 'Livestream: Lyon Powermeet 2025', shortLabel: 'LPM 2025' },
+      { type: 'YouTube', url: 'https://www.youtube.com/watch?v=Xw9bL8XHsdY&t=30459s', label: 'Livestream: Silent Worker Meet, Winter Edition 2024', shortLabel: 'Silent Worker 2024' }
     ],
     status: 'Ongoing',
-    teamSize: '300 athletes',
+    teamSize: '20–40 people per meet',
     highlights: [
       'Team leadership',
       'Conflict resolution',
       'Event management experience',
-      'Technical challenge design'
+      'Live video production'
     ]
   }
 ];

@@ -357,9 +357,9 @@ export default function NetworkPage({
         {(selectedItem || selectedCategory) && (
           <div className="filter-info">
             <p className="filter-text">
-              {selectedItem
+                            {selectedItem
                 ? `Showing: ${selectedItem.name}`
-                : `Showing ${displayedItems.length} ${getCountLabel(displayedItems.length)} from ${selectedCategory}`}
+                : `Showing ${getCountLabel(displayedItems.length)} from ${selectedCategory}`}
             </p>
             <button onClick={handleClearFilters} className="clear-button">
               Clear Filters

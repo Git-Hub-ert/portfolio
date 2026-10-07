@@ -1,7 +1,7 @@
 // LandingPage.jsx
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Shield, Briefcase, Award, Dumbbell, Mail, PocketKnife } from 'lucide-react';
+import { Shield, Briefcase, Award, Mail, PocketKnife } from 'lucide-react'; //Dumbbell
 import { useNavigate } from 'react-router-dom';
 
 export default function LandingPage() {
@@ -39,7 +39,7 @@ export default function LandingPage() {
     {
       icon: Award,
       title: 'Certifications',
-      description: "Explore the certifications that validate my expertise.",
+      description: "Certifications, training and awareness courses I have completed.",
       path: '/certifications',
     },
     {
@@ -48,12 +48,13 @@ export default function LandingPage() {
       description: "Check out the projects I've built and contributed to.",
       path: '/projects',
     },
-    {
+/*    {
       icon: Dumbbell,
       title: 'Learn More',
       description: "Learn about myself, my studies and my hobbies.",
       path: '/learn-more',
     },
+*/ 
     {
       icon: Mail,
       title: 'Contact',
@@ -68,7 +69,7 @@ export default function LandingPage() {
         <title>Hubert de Tournay | Cybersecurity Portfolio</title>
         <meta
           name="description"
-          content="Hubert de Tournay — cybersecurity engineering student and CISO apprentice at Véolia Connected Solutions. Explore my experience, skills, certifications, and projects."
+          content="Hubert de Tournay — cybersecurity engineering student and CISO apprentice at Veolia Connected Solutions. Explore my experience, skills, certifications, and projects."
         />
         <link rel="canonical" href="https://www.de-tournay.fr/" />
         <script type="application/ld+json">{JSON.stringify({
@@ -82,7 +83,8 @@ export default function LandingPage() {
             "jobTitle": "Cybersecurity Engineering Student & CISO Apprentice",
             "worksFor": {
               "@type": "Organization",
-              "name": "Véolia Connected Solutions (Birdz)",
+              "name": "Veolia Connected Solutions",
+              "alternateName": "Birdz",
               "url": "https://www.birdz.com"
             },
             "address": {
@@ -111,7 +113,7 @@ export default function LandingPage() {
             style={{
               width: '384px',
               height: '384px',
-              background: 'var(--color-purple)',
+              background: 'var(--color-accent)',
               borderRadius: '50%',
               filter: 'blur(80px)',
               top: '10%',
@@ -126,7 +128,7 @@ export default function LandingPage() {
             style={{
               width: '384px',
               height: '384px',
-              background: 'var(--color-blue)',
+              background: 'var(--color-accent-secondary)',
               borderRadius: '50%',
               filter: 'blur(80px)',
               top: '40%',
@@ -160,9 +162,9 @@ export default function LandingPage() {
               href="https://www.birdz.com"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: 'var(--color-purple-light)', textDecoration: 'underline' }}
+              className="hero-link"
             >
-              Véolia Connected Solutions
+              Veolia Connected Solutions
             </a>
             {' '}with a passion for protecting digital assets.<br />
             I aspire to become a CISO and have gained hands-on experience through multiple internships and extracurricular activities.<br />
@@ -206,10 +208,7 @@ export default function LandingPage() {
                   className="card"
                   onClick={() => { navigate(card.path); window.scrollTo(0, 0); }}
                 >
-                  <div
-                    className="card-icon"
-                    style={{ background: card.gradient }}
-                  >
+                  <div className="card-icon">
                     <Icon size={32} />
                   </div>
 

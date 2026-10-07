@@ -50,9 +50,9 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
+  <!--<url>
     <loc>https://www.de-tournay.fr/learn-more</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
-  </url>
+  </url>-->
 </urlset>

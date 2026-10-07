@@ -11,13 +11,14 @@ export default function UnderConstructionPage() {
 
   return (
     <div className="construction-container">
+      {/* Hidden placeholder (LM-01): kept reachable for old links, but kept out of search results until it becomes the About page. */}
       <Helmet>
         <title>Learn More | Hubert de Tournay</title>
         <meta
           name="description"
           content="More about Hubert de Tournay — studies, hobbies, and background. Page under construction."
         />
-        <link rel="canonical" href="https://www.de-tournay.fr/learn-more" />
+        <meta name="robots" content="noindex" />
       </Helmet>
 
       <div className="construction-bg-container">

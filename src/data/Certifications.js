@@ -1,83 +1,86 @@
+// `type`: 'Certification' = passed an exam; 'Training' = course with a completion quiz; 'Awareness' = short awareness course.
 const certificationsData = [
-  { 
-    id: "anssi", 
-    name: "ANSSI - Cybersecurity Awareness", 
-    category: "Security", 
-    connections: ["fortinet", "cissp", "ethicalHacker"], 
-    obtained: "2023", 
-    summary: "Based on ANSSI (French National Cybersecurity Agency) standards..."
+  {
+    id: "tenacy",
+    name: "Tenacy Certified User",
+    issuer: "Tenacy",
+    type: "Certification",
+    category: "Security",
+    connections: ["cissp", "anssi"],
+    obtained: "2025",
+    // TODO(Hubert): confirm the description of Tenacy (governance, risk and compliance platform).
+    summary: "Certification on Tenacy, a cybersecurity governance, risk and compliance (GRC) platform, obtained by passing an exam."
   },
-  { 
+  {
+    id: "anssi",
+    name: "SecNumacadémie - Cybersecurity Awareness",
+    issuer: "ANSSI (French National Cybersecurity Agency)",
+    type: "Awareness",
+    category: "Security",
+    connections: ["fortinet", "cisco", "ethicalHacker"],
+    obtained: "2023",
+    summary: "Online course on cybersecurity fundamentals: the threat landscape, authentication, safe internet use and device security."
+  },
+  {
+    id: "cisco",
+    name: "Introduction to Cybersecurity",
+    issuer: "Cisco",
+    type: "Training",
+    category: "Security",
+    connections: ["anssi", "fortinet"],
+    obtained: "2023",
+    // TODO(Hubert): check this summary matches what the course covered.
+    summary: "Cisco's introductory course on common cyber threats, protecting personal data and devices, and how organizations defend against attacks."
+  },
+  {
     id: "fortinet",
-    name: "Fortinet - Information Security Awareness",
+    name: "Information Security Awareness",
+    issuer: "Fortinet",
+    type: "Awareness",
     category: "Security",
-    connections: ["anssi", "cissp"],
+    connections: ["anssi", "cisco"],
     obtained: "2023",
-    summary: "Provides foundational knowledge on cybersecurity best practices..."
+    summary: "An English-language introduction to information security best practices, similar in scope to SecNumacadémie."
   },
-  { 
+  {
     id: "cissp",
-    name: "MAP - CISSP Training",
+    name: "CISSP Preparation Course",
+    issuer: "Master of Project Academy",
+    type: "Training",
     category: "Security",
-    connections: ["ethicalHacker", "fortinet"],
+    connections: ["ethicalHacker", "tenacy"],
     obtained: "2023",
-    summary: "Comprehensive CISSP-oriented training"
+    summary: "An online course preparing for the CISSP exam. This is a training course, not the CISSP certification itself."
   },
-  { 
+  {
     id: "ethicalHacker",
-    name: "MAP - Ethical Hacker Training",
+    name: "Ethical Hacker Training",
+    issuer: "Master of Project Academy",
+    type: "Training",
     category: "Security",
-    connections: ["cissp"],
+    connections: ["cissp", "anssi"],
     obtained: "2023",
-    summary: "Introduces ethical hacking techniques..."
+    summary: "An introductory course on the basics of ethical hacking."
   },
-  { 
+  {
     id: "vigipirate",
-    name: "Vigipirate",
+    name: "Vigipirate Plan Awareness",
+    issuer: "French Government (MOOC)",
+    type: "Awareness",
     category: "Other",
-    connections: ["hiIntroSecurity"],
+    connections: ["hi"],
     obtained: "2023",
-    summary: "French national safety program..."
+    summary: "An online course on the Vigipirate plan, France's national system for preventing and responding to terrorist threats."
   },
-  { 
-    id: "hiFraud",
-    name: "HI - Awareness of Fraud and Corruption Prevention",
+  {
+    id: "hi",
+    name: "Field Onboarding & Security Training (5 modules)",
+    issuer: "Humanity & Inclusion",
+    type: "Training",
     category: "Other",
-    connections: ["hiIntroSecurity"],
+    connections: ["vigipirate"],
     obtained: "2023",
-    summary: "Focuses on identifying and preventing fraud..."
-  },
-  { 
-    id: "hiHealth",
-    name: "HI - Health Module for International Staff",
-    category: "Other",
-    connections: ["hiIntroSecurity"],
-    obtained: "2023",
-    summary: "Covers essential health and safety practices..."
-  },
-  { 
-    id: "hiIntroSecurity",
-    name: "HI - Introduction to Security at HI",
-    category: "Security",
-    connections: ["vigipirate", "hiExplosive"],
-    obtained: "2023",
-    summary: "Introduces HI’s security policies and situational awareness."
-  },
-  { 
-    id: "hiExplosive",
-    name: "HI - Explosive Ordnance Security Training",
-    category: "Security",
-    connections: ["hiIntroSecurity"],
-    obtained: "2023",
-    summary: "Provides awareness and safety procedures for environments contaminated by explosives."
-  },
-  { 
-    id: "hiWelcome",
-    name: "HI - Welcome (FR)",
-    category: "Other",
-    connections: ["hiIntroSecurity", "hiHealth"],
-    obtained: "2023",
-    summary: "Introductory onboarding program for new HI staff."
+    summary: "Five onboarding modules from the international NGO Humanity & Inclusion: staff welcome, HI security policies, explosive ordnance safety, health and safety in dangerous areas, and fraud and corruption prevention."
   },
 ];
 
