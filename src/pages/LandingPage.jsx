@@ -1,7 +1,7 @@
 // LandingPage.jsx
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Shield, Briefcase, Award, Dumbbell, Mail, PocketKnife } from 'lucide-react';
+import { Shield, Briefcase, Award, Mail, PocketKnife } from 'lucide-react'; //Dumbbell
 import { useNavigate } from 'react-router-dom';
 
 export default function LandingPage() {
@@ -48,12 +48,13 @@ export default function LandingPage() {
       description: "Check out the projects I've built and contributed to.",
       path: '/projects',
     },
-    {
+/*    {
       icon: Dumbbell,
       title: 'Learn More',
       description: "Learn about myself, my studies and my hobbies.",
       path: '/learn-more',
     },
+*/ 
     {
       icon: Mail,
       title: 'Contact',
