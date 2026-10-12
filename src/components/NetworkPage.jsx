@@ -329,7 +329,8 @@ export default function NetworkPage({
       <section className="category-section">
         <h2 className="section-title">{categorySectionTitle}</h2>
         <div className="category-grid">
-          {categories.map(cat => {
+          {/* Hide categories with no items: a filter that always shows "0" is noise */}
+          {categories.filter(cat => data.some(i => i.category === cat.name)).map(cat => {
             const count    = data.filter(i => i.category === cat.name).length;
             const isActive = selectedCategory === cat.name;
             return (
