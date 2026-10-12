@@ -28,7 +28,6 @@ const certificationsData = [
     category: "Security",
     connections: ["anssi", "fortinet"],
     obtained: "2023",
-    // TODO(Hubert): check this summary matches what the course covered.
     summary: "Cisco's introductory course on common cyber threats, protecting personal data and devices, and how organizations defend against attacks."
   },
   {
