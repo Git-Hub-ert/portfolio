@@ -8,8 +8,7 @@ const certificationsData = [
     category: "Security",
     connections: ["cissp", "anssi"],
     obtained: "2025",
-    // TODO(Hubert): confirm the description of Tenacy (governance, risk and compliance platform).
-    summary: "Certification on Tenacy, a cybersecurity governance, risk and compliance (GRC) platform, obtained by passing an exam."
+    summary: "Certification on Tenacy, a governance, risk and compliance (GRC) platform. Earned at school after a month-long group project in which we identified risks, prioritized them and justified our choices, followed by an exam."
   },
   {
     id: "anssi",
@@ -29,7 +28,6 @@ const certificationsData = [
     category: "Security",
     connections: ["anssi", "fortinet"],
     obtained: "2023",
-    // TODO(Hubert): check this summary matches what the course covered.
     summary: "Cisco's introductory course on common cyber threats, protecting personal data and devices, and how organizations defend against attacks."
   },
   {
