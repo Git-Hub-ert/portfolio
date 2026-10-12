@@ -43,7 +43,7 @@ export default function ExperiencePage() {
       company: 'Veolia Connected Solutions (formerly Birdz)',
       date: 'Feb 2024 - Apr 2024',
       place: 'Lyon, France',
-      description: 'Built and ran a phishing awareness campaign on Google Cloud (300 users). Created phishing emails and sites, analyzed results (10% victim rate), trained employees, and cut organizational risk by half.',
+      description: 'Designed and ran a phishing simulation campaign for about 300 employees, using GoPhish hosted on Google Cloud. Created the phishing emails and landing pages, analyzed the results, and trained employees to recognize phishing attempts.',
       logo: BirdzLogo,
     },
     {

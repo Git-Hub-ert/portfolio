@@ -55,7 +55,6 @@ const skillsData = [
   { id: "Teaching Skills", learned: '2024', name: "Teaching Skills", category: "Soft Skills", connections: ["Advising", "Leadership"] },
   { id: "Communication", learned: '2024', name: "Communication", category: "Soft Skills", connections: ["Teamwork", "Leadership"] },
   { id: "Leadership", learned: '2025', name: "Leadership", category: "Soft Skills", connections: ["Management", "Teamwork", "Teaching Skills"] },
-  // TODO(Hubert): no `learned` year; this item will be merged during SK-05.
   { id: "Continuous Learning Mindset", name: "Continuous Learning Mindset", category: "Soft Skills", connections: ["Adaptation", "Agile"] },
   { id: "English", name: "English", category: "Languages", connections: ["Communication", "Documentation"], level: "C2" },
   { id: "French", name: "French", category: "Languages", connections: ["Communication", "Documentation"], level: "Native" }
