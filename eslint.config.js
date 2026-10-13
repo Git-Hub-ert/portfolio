@@ -4,7 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 
 export default [
-  { ignores: ['build', 'node_modules'] },
+  { ignores: ['build', 'build-ssr', 'node_modules'] },
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
@@ -32,7 +32,7 @@ export default [
     languageOptions: { globals: { ...globals.browser, ...globals.vitest } },
   },
   {
-    files: ['vite.config.js', 'eslint.config.js'],
+    files: ['vite.config.js', 'eslint.config.js', 'scripts/**/*.js', 'src/test/**/*.js'],
     languageOptions: { globals: { ...globals.node } },
   },
 ];

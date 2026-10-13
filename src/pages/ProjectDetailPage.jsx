@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Github, FileText, Youtube, Calendar, Users, CheckCircle, Briefcase } from 'lucide-react';
 import projectsData from '../data/Projects.js';
+import { pageUrl } from '../data/site';
 
 export default function ProjectDetailPage() {
   const { projectId } = useParams();
@@ -55,9 +56,9 @@ export default function ProjectDetailPage() {
   return (
     <div className="projects-container">
       <Helmet>
-        <title>{project.title} | Hubert de Tournay</title>
+        <title>{`${project.title} | Hubert de Tournay`}</title>
         <meta name="description" content={project.tagline} />
-        <link rel="canonical" href={`https://www.de-tournay.fr/projects/${project.id}`} />
+        <link rel="canonical" href={pageUrl(`/projects/${project.id}`)} />
       </Helmet>
 
       <div className="back-button-container">

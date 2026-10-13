@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { Linkedin, Github, MapPin } from 'lucide-react';
 import qrCodeImage from '../assets/LinkedinQRCode.png';
 import emailjs from '@emailjs/browser';
+import { pageUrl } from '../data/site';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -65,7 +66,7 @@ export default function ContactPage() {
           name="description"
           content="Get in touch with Hubert de Tournay, cybersecurity engineering student and CISO apprentice based in Lyon, France."
         />
-        <link rel="canonical" href="https://www.de-tournay.fr/contact" />
+        <link rel="canonical" href={pageUrl('/contact')} />
       </Helmet>
 
       <section className="hero-section">
