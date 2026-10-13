@@ -2,6 +2,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  // Only for previewing a production build behind the IDE proxy; never set when deploying.
+  base: process.env.PREVIEW_BASE || '/',
   plugins: [react()],
   server: {
     // IPv4 loopback: reachable by a local reverse proxy, but not exposed to the network
@@ -20,6 +22,7 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: './src/setupTests.js',
+    globalSetup: './src/test/prerenderSetup.js',
     css: false,
   },
 });

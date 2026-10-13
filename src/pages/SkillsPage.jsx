@@ -2,6 +2,7 @@
 import React from 'react';
 import NetworkPage from '../components/NetworkPage';
 import skillsData from '../data/Skills';
+import { pageUrl } from '../data/site';
 
 const categories = [
   { name: 'Frontend',             color: '#8b5cf6' },
@@ -24,7 +25,7 @@ export default function SkillsPage() {
       // Helmet
       helmetTitle="Skills | Hubert de Tournay"
       helmetDescription="Technical and soft skills of Hubert de Tournay across cybersecurity, cloud, DevOps, frontend and backend development, networking, and project management."
-      helmetCanonical="https://www.de-tournay.fr/skills"
+      helmetCanonical={pageUrl('/skills')}
       // Layout
       containerClass="skills-container"
       sectionClass="skills-section"

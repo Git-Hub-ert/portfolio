@@ -6,6 +6,7 @@
 
 # production
 /build
+/build-ssr
 
 # environment (EmailJS keys live here)
 .env

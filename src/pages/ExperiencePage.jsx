@@ -8,6 +8,7 @@ import ErciyesLogo from '../assets/CompanyLogos/ErciyesLogo.png';
 import BKLogo from '../assets/CompanyLogos/BKLogo.png';
 import CagetteLogo from '../assets/CompanyLogos/CagetteLogo.png';
 import ValboisLogo from '../assets/CompanyLogos/ValboisLogo.png';
+import { pageUrl } from '../data/site';
 
 export default function ExperiencePage() {
   const Jobs = [
@@ -86,7 +87,7 @@ export default function ExperiencePage() {
           name="description"
           content="Professional experience of Hubert de Tournay — IT advisor, CISO apprentice, and cybersecurity internships including phishing prevention and adversarial AI research."
         />
-        <link rel="canonical" href="https://www.de-tournay.fr/experience" />
+        <link rel="canonical" href={pageUrl('/experience')} />
       </Helmet>
 
       {/* Jobs Section */}

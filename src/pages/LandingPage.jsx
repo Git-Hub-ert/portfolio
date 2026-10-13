@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Shield, Briefcase, Award, Mail, PocketKnife } from 'lucide-react'; //Dumbbell
 import { useNavigate } from 'react-router-dom';
+import { SITE_URL, pageUrl } from '../data/site';
 
 export default function LandingPage() {
   const [scrollY, setScrollY] = useState(0);
@@ -71,15 +72,15 @@ export default function LandingPage() {
           name="description"
           content="Hubert de Tournay — cybersecurity engineering student and CISO apprentice at Veolia Connected Solutions. Explore my experience, skills, certifications, and projects."
         />
-        <link rel="canonical" href="https://www.de-tournay.fr/" />
+        <link rel="canonical" href={pageUrl('/')} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfilePage",
           "mainEntity": {
             "@type": "Person",
             "name": "Hubert de Tournay",
-            "url": "https://www.de-tournay.fr",
-            "image": "https://www.de-tournay.fr/og-image.png",
+            "url": SITE_URL,
+            "image": `${SITE_URL}/og-image.png`,
             "jobTitle": "Cybersecurity Engineering Student & CISO Apprentice",
             "worksFor": {
               "@type": "Organization",

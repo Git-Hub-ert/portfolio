@@ -2,6 +2,7 @@
 import React from 'react';
 import NetworkPage from '../components/NetworkPage';
 import certificationsData from '../data/Certifications.js';
+import { pageUrl } from '../data/site';
 
 const categories = [
   { name: 'Security',     color: '#f87171' },
@@ -19,7 +20,7 @@ export default function CertificationsPage() {
       // Helmet
       helmetTitle="Certifications & Training | Hubert de Tournay"
       helmetDescription="Certifications and training completed by Hubert de Tournay: Tenacy Certified User, ANSSI SecNumacadémie, Cisco Introduction to Cybersecurity and more."
-      helmetCanonical="https://www.de-tournay.fr/certifications"
+      helmetCanonical={pageUrl('/certifications')}
       // Layout
       containerClass="certifications-container"
       sectionClass="certifications-section"

@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import { ExternalLink, Github, FileText, Calendar, Users, ArrowRight, Youtube } from 'lucide-react';
 import projectsData from '../data/Projects.js';
+import { pageUrl } from '../data/site';
 
 const categories = [
   { name: 'All Projects',    color: '#8b5cf6' },
@@ -43,7 +44,7 @@ export default function ProjectsPage() {
           name="description"
           content="Web development, security tooling, and network engineering projects by Hubert de Tournay, including Battle-X and the OptiAttack adversarial AI dashboard."
         />
-        <link rel="canonical" href="https://www.de-tournay.fr/projects" />
+        <link rel="canonical" href={pageUrl('/projects')} />
       </Helmet>
 
       <section className="hero-section">
