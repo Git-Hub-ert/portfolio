@@ -1,34 +1,54 @@
 import React, { useState, useEffect } from 'react';
 
+const STORAGE_KEY = 'app-theme';
+
+// Storage access throws when the browser blocks site data (e.g. "block all cookies"),
+// so the theme must degrade to "not remembered" instead of crashing the app (NV-05).
+const readSavedTheme = () => {
+  try {
+    return localStorage.getItem(STORAGE_KEY);
+  } catch {
+    return null;
+  }
+};
+
+const saveTheme = (themeName) => {
+  try {
+    localStorage.setItem(STORAGE_KEY, themeName);
+  } catch {
+    // Not persisted; the choice still applies for this page view.
+  }
+};
+
+const applyTheme = (themeName) => {
+  document.documentElement.setAttribute('data-theme', themeName);
+};
+
 const ThemeSwitcher = () => {
   const [theme, setTheme] = useState('purple');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    // Check localStorage first
-    const savedTheme = localStorage.getItem('app-theme');
-    if (savedTheme) {
+    const savedTheme = readSavedTheme();
+    if (savedTheme === 'purple' || savedTheme === 'teal') {
       setTheme(savedTheme);
       applyTheme(savedTheme);
     } else {
-      // Fall back to system preference
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       const systemTheme = prefersDark ? 'purple' : 'teal';
       setTheme(systemTheme);
+      // Not saved: only an explicit toggle is remembered, so the OS preference keeps
+      // applying on later visits (first half of NV-06).
       applyTheme(systemTheme);
     }
   }, []);
-
-  const applyTheme = (themeName) => {
-    document.documentElement.setAttribute('data-theme', themeName);
-    localStorage.setItem('app-theme', themeName);
-  };
 
   const handleToggle = () => {
     const newTheme = theme === 'purple' ? 'teal' : 'purple';
     setTheme(newTheme);
     applyTheme(newTheme);
+    saveTheme(newTheme);
 
     // Announce to screen readers
     const announcement = `Theme set to ${newTheme.charAt(0).toUpperCase() + newTheme.slice(1)}`;
