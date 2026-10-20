@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import HILogo from '../assets/CompanyLogos/HILogo.png';
-import BirdzLogo from '../assets/CompanyLogos/BirdzLogo.png';
-import ErciyesLogo from '../assets/CompanyLogos/ErciyesLogo.png';
-import BKLogo from '../assets/CompanyLogos/BKLogo.png';
-import CagetteLogo from '../assets/CompanyLogos/CagetteLogo.png';
-import ValboisLogo from '../assets/CompanyLogos/ValboisLogo.png';
+import HILogo from '../assets/CompanyLogos/HILogo.webp';
+import BirdzLogo from '../assets/CompanyLogos/BirdzLogo.webp';
+import ErciyesLogo from '../assets/CompanyLogos/ErciyesLogo.webp';
+import BKLogo from '../assets/CompanyLogos/BKLogo.webp';
+import CagetteLogo from '../assets/CompanyLogos/CagetteLogo.webp';
+import ValboisLogo from '../assets/CompanyLogos/ValboisLogo.webp';
 import { pageUrl } from '../data/site';
 
 export default function ExperiencePage() {
@@ -114,6 +114,8 @@ export default function ExperiencePage() {
             src={Jobs[activeJob].logo}
             alt={Jobs[activeJob].company}
             className="logo"
+            width="120"
+            height="120"
           />
           <h3 className="job-title">
             {Jobs[activeJob].title}
@@ -156,6 +158,8 @@ export default function ExperiencePage() {
             src={internships[activeInternship].logo}
             alt={internships[activeInternship].company}
             className="logo"
+            width="120"
+            height="120"
           />
           <h3 className="job-title">
             {internships[activeInternship].title}
@@ -198,6 +202,8 @@ export default function ExperiencePage() {
             src={studentJobs[activeStudentJob].logo}
             alt={studentJobs[activeStudentJob].company}
             className="logo"
+            width="120"
+            height="120"
           />
           <h3 className="job-title">
             {studentJobs[activeStudentJob].title}

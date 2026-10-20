@@ -80,7 +80,7 @@ export default function LandingPage() {
             "@type": "Person",
             "name": "Hubert de Tournay",
             "url": SITE_URL,
-            "image": `${SITE_URL}/og-image.png`,
+            "image": `${SITE_URL}/og-image.jpg`,
             "jobTitle": "Cybersecurity Engineering Student & CISO Apprentice",
             "worksFor": {
               "@type": "Organization",
