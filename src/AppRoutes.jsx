@@ -14,27 +14,25 @@ const ProjectDetailPage    = lazy(() => import('./pages/ProjectDetailPage'));
 const UnderConstructionPage = lazy(() => import('./pages/ConstructionPage'));
 const NotFoundPage         = lazy(() => import('./pages/NotFoundPage'));
 
-// Shared by the browser entry (App.jsx) and the prerender entry (entry-server.jsx),
-// so both render exactly the same tree and hydration matches.
 export default function AppRoutes() {
   return (
-    <>
+    <ErrorBoundary>
+      {/* Inside the boundary: an error in the nav (theme storage, for example) must show
+          the error screen, not unmount the whole app into a blank page (NV-05). */}
       <Navigation />
-      <ErrorBoundary>
-        <Suspense fallback={<div style={{ minHeight: '100vh', background: '#0f172a' }} />}>
-          <Routes>
-            <Route path="/"                    element={<LandingPage />} />
-            <Route path="/experience"          element={<ExperiencePage />} />
-            <Route path="/contact"             element={<ContactPage />} />
-            <Route path="/skills"              element={<SkillsPage />} />
-            <Route path="/certifications"      element={<CertificationsPage />} />
-            <Route path="/projects"            element={<ProjectsPage />} />
-            <Route path="/projects/:projectId" element={<ProjectDetailPage />} />
-            <Route path="/learn-more"          element={<UnderConstructionPage />} />
-            <Route path="*"                    element={<NotFoundPage />} />
-          </Routes>
-        </Suspense>
-      </ErrorBoundary>
-    </>
+      <Suspense fallback={<div style={{ minHeight: '100vh', background: '#0f172a' }} />}>
+        <Routes>
+          <Route path="/"                    element={<LandingPage />} />
+          <Route path="/experience"          element={<ExperiencePage />} />
+          <Route path="/contact"             element={<ContactPage />} />
+          <Route path="/skills"              element={<SkillsPage />} />
+          <Route path="/certifications"      element={<CertificationsPage />} />
+          <Route path="/projects"            element={<ProjectsPage />} />
+          <Route path="/projects/:projectId" element={<ProjectDetailPage />} />
+          <Route path="/learn-more"          element={<UnderConstructionPage />} />
+          <Route path="*"                    element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
+    </ErrorBoundary>
   );
 }
