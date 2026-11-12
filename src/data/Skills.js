@@ -16,6 +16,7 @@ const skillsData = [
   { id: "Java", learned: '2024', name: "Java", category: "Backend", connections: ["Object-Oriented Programming", "Design Patterns"] },
   { id: "Python", learned: '2020', name: "Python", category: "Backend", connections: ["Scripting", "Automation"] },
   { id: "PHP", learned: '2023', name: "PHP", category: "Backend", connections: ["MySQL", "HTML", "OWASP"] },
+  { id: "FastAPI", learned: '2026', name: "FastAPI", category: "Backend", connections: ["Python", "Docker", "Google Cloud Platform"] },
   { id: "JavaScript", learned: '2022', name: "JavaScript", category: "Frontend", connections: ["HTML", "React", "Node.js", "Apps Script"] },
   { id: "C", learned: '2024', name: "C", category: "Backend", connections: ["Linux Administration"] },
   { id: "Object-Oriented Programming", learned: '2020', name: "Object-Oriented Programming", category: "Software Engineering", connections: ["Design Patterns", "Java"] },
@@ -99,6 +100,7 @@ const skillsData = [
   // ── Tools, DevOps & automation ──
   { id: "Git Workflow", learned: '2026', name: "Git Workflow", category: "Tools", connections: ["Git", "GitHub", "CI/CD", "Teamwork"] },
   { id: "CI/CD", learned: '2026', name: "CI/CD", category: "DevOps", connections: ["Git Workflow", "Docker", "Automation", "Security Process Integration"] },
+  { id: "GitLab CI", learned: '2026', name: "GitLab CI", category: "DevOps", connections: ["CI/CD", "Git", "Git Workflow"] },
   { id: "Automation", learned: '2026', name: "Automation", category: "DevOps", connections: ["Scripting", "Python", "CI/CD", "Apps Script"] },
   { id: "Atlassian", learned: '2026', name: "Atlassian", category: "Tools", connections: ["Jira", "Confluence", "CMDB"] },
   { id: "Jira", learned: '2026', name: "Jira", category: "Project Management", connections: ["Atlassian", "Agile", "CMDB", "Trello"] },
