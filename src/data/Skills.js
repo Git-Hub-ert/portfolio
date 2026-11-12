@@ -10,7 +10,7 @@ const skillsData = [
   { id: "System Administration", learned: '2023', name: "System Administration", category: "Systems", connections: ["Linux Administration", "Windows Administration", "Networking", "Monitoring", "CMDB", "BCP / DRP"] },
   { id: "Linux Administration", learned: '2024', name: "Linux Administration", category: "Systems", connections: ["System Administration", "Scripting", "Networking", "Hardening"] },
   { id: "Windows Administration", learned: '2024', name: "Windows Administration", category: "Systems", connections: ["System Administration", "Networking", "Hardening"] },
-  { id: "Scripting", name: "Scripting", category: "Backend", connections: ["Python", "Automation"], learned: '2023' },
+  { id: "Scripting", name: "Scripting", category: "Backend", connections: ["Python", "Automation"], learned: '2020' },
   { id: "Virtualization", learned: '2023', name: "Virtualization", category: "Systems", connections: ["System Administration", "Cloud Computing"] },
   { id: "Node.js", learned: '2025', name: "Node.js", category: "Backend", connections: ["JavaScript", "MySQL", "JSON", "OWASP"] },
   { id: "Java", learned: '2024', name: "Java", category: "Backend", connections: ["Object-Oriented Programming", "Design Patterns"] },
