@@ -67,6 +67,9 @@ const skillsData = [
   { id: "BCP / DRP", learned: '2026', name: "BCP / DRP", category: "GRC", connections: ["EBIOS RM Analysis", "Incident Management", "System Administration", "Governance"] },
   { id: "Reporting & KPIs", learned: '2026', name: "Reporting & KPIs", category: "GRC", connections: ["Management", "Governance", "Google Sheets", "Plain-Language Communication", "Vulnerability Prioritization"] },
   { id: "Security Process Integration", learned: '2026', name: "Security Process Integration", category: "GRC", connections: ["Security", "Governance", "Agile", "CI/CD"] },
+  { id: "ISO 27005", learned: '2026', name: "ISO 27005", category: "GRC", connections: ["EBIOS RM Analysis", "ISO 27001", "Risk Prioritization"] },
+  { id: "Risk Prioritization", learned: '2026', name: "Risk Prioritization", category: "GRC", connections: ["EBIOS RM Analysis", "Vulnerability Prioritization", "Governance", "Decision-Making"] },
+  { id: "TARA", learned: '2026', name: "TARA (Threat Analysis & Risk Assessment)", category: "GRC", connections: ["STRIDE", "EBIOS RM Analysis", "ISO-CRA Mapping", "Risk Prioritization"] },
 
   // ── Cybersecurity (technical & operations) ──
   { id: "Context-Aware Access", learned: '2026', name: "Context-Aware Access (CAA)", category: "Cybersecurity", connections: ["Security", "IAM", "Governance"] },
@@ -78,6 +81,7 @@ const skillsData = [
   { id: "Cloud Security", learned: '2026', name: "Cloud Security", category: "Cybersecurity", connections: ["Security", "IAM", "Cloud Computing", "Google Cloud Platform", "Amazon Web Services", "Terraform"] },
   { id: "OWASP", learned: '2026', name: "OWASP", category: "Cybersecurity", connections: ["Security", "Pen Testing", "Node.js", "PHP", "React"] },
   { id: "Hardening", learned: '2026', name: "Hardening", category: "Cybersecurity", connections: ["Security", "Linux Administration", "Windows Administration", "Firewalls"] },
+  { id: "STRIDE", learned: '2026', name: "STRIDE Threat Modeling", category: "Cybersecurity", connections: ["Security", "OWASP"] },
 
   // ── Awareness & communication ──
   { id: "Security Awareness & Training", learned: '2026', name: "Security Awareness & Training", category: "Soft Skills", connections: ["Teaching Skills", "Advising", "Communication", "Plain-Language Communication", "Security Policy"] },
