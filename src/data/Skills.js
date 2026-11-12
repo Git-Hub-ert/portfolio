@@ -34,6 +34,7 @@ const skillsData = [
   { id: "DNS", learned: '2023', name: "DNS", category: "Systems", connections: ["Networking", "Load Balancing"] },
   { id: "Load Balancing", learned: '2023', name: "Load Balancing", category: "Systems", connections: ["Networking", "DNS"] },
   { id: "Routing", learned: '2023', name: "Routing", category: "Systems", connections: ["Networking", "DNS", "Firewalls"] },
+  { id: "Network Segmentation", learned: '2026', name: "Network Segmentation", category: "Systems", connections: ["Networking", "Firewalls", "Routing", "Hardening"] },
   { id: "Git", learned: '2023', name: "Git", category: "Tools", connections: ["GitHub", "Git Workflow"] },
   { id: "GitHub", learned: '2023', name: "GitHub", category: "Tools", connections: ["Git", "Documentation", "Git Workflow"] },
   { id: "Trello", learned: '2025', name: "Trello", category: "Project Management", connections: ["Agile", "Teamwork", "Jira"] },
