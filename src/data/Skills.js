@@ -81,6 +81,11 @@ const skillsData = [
   { id: "Cloud Security", learned: '2026', name: "Cloud Security", category: "Cybersecurity", connections: ["Security", "IAM", "Cloud Computing", "Google Cloud Platform", "Amazon Web Services", "Terraform"] },
   { id: "OWASP", learned: '2026', name: "OWASP", category: "Cybersecurity", connections: ["Security", "Pen Testing", "Node.js", "PHP", "React"] },
   { id: "Hardening", learned: '2026', name: "Hardening", category: "Cybersecurity", connections: ["Security", "Linux Administration", "Windows Administration", "Firewalls"] },
+  { id: "Crisis Management", learned: '2026', name: "Crisis Management", category: "Cybersecurity", connections: ["Incident Management", "BCP / DRP", "Decision-Making", "Stress Management", "Leadership", "Communication", "Node.js", "PHP"] },
+  { id: "Post-Incident Review", learned: '2026', name: "Post-Incident Review (RETEX)", category: "Cybersecurity", connections: ["Crisis Management", "Incident Management", "Documentation", "Continuous Learning Mindset"] },
+  { id: "EDR", learned: '2026', name: "EDR (CrowdStrike Falcon)", category: "Cybersecurity", connections: ["SOC Analysis", "Incident Management", "Hardening"] },
+  { id: "Alert Tuning", learned: '2026', name: "Alert Tuning & Whitelisting", category: "Cybersecurity", connections: ["SOC Analysis", "Monitoring", "EDR"] },
+  { id: "MITRE ATT&CK", learned: '2026', name: "MITRE ATT&CK", category: "Cybersecurity", connections: ["Threat Intelligence", "SOC Analysis", "EDR", "EBIOS RM Analysis", "STRIDE"] },
   { id: "STRIDE", learned: '2026', name: "STRIDE Threat Modeling", category: "Cybersecurity", connections: ["Security", "OWASP"] },
 
   // ── Awareness & communication ──
