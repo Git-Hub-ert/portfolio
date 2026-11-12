@@ -69,6 +69,7 @@ const skillsData = [
   { id: "BCP / DRP", learned: '2026', name: "BCP / DRP", category: "GRC", connections: ["EBIOS RM Analysis", "Incident Management", "System Administration", "Governance"] },
   { id: "Reporting & KPIs", learned: '2026', name: "Reporting & KPIs", category: "GRC", connections: ["Management", "Governance", "Google Sheets", "Plain-Language Communication", "Vulnerability Prioritization"] },
   { id: "Security Process Integration", learned: '2026', name: "Security Process Integration", category: "GRC", connections: ["Security", "Governance", "Agile", "CI/CD"] },
+  { id: "NIS2", learned: '2026', name: "NIS2", category: "GRC", connections: ["Governance", "ISO 27001", "ISO-CRA Mapping", "GDPR", "Incident Management"] },
   { id: "ISO 27005", learned: '2026', name: "ISO 27005", category: "GRC", connections: ["EBIOS RM Analysis", "ISO 27001", "Risk Prioritization"] },
   { id: "Risk Prioritization", learned: '2026', name: "Risk Prioritization", category: "GRC", connections: ["EBIOS RM Analysis", "Vulnerability Prioritization", "Governance", "Decision-Making"] },
   { id: "TARA", learned: '2026', name: "TARA (Threat Analysis & Risk Assessment)", category: "GRC", connections: ["STRIDE", "EBIOS RM Analysis", "ISO-CRA Mapping", "Risk Prioritization"] },
