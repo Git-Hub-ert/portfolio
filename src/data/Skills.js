@@ -27,7 +27,7 @@ const skillsData = [
   { id: "React", learned: '2025', name: "React", category: "Frontend", connections: ["HTML", "CSS", "JSON", "OWASP"] },
   { id: "MySQL", learned: '2023', name: "MySQL", category: "Database", connections: ["PHP", "Python"] },
   { id: "Security", learned: '2023', name: "Security", category: "Cybersecurity", connections: ["Adversarial Attacks", "Pen Testing", "EBIOS RM Analysis", "ISO 27001", "Context-Aware Access", "IAM", "SOC Analysis", "Data Classification", "Vulnerability Prioritization", "Threat Intelligence", "Cloud Security", "OWASP", "Hardening", "Security Process Integration"] },
-  { id: "Adversarial Attacks", learned: '2025', name: "Adversarial Attacks", category: "Cybersecurity", connections: ["Security"] },
+  { id: "Adversarial Attacks", learned: '2025', name: "Adversarial Attacks", category: "Cybersecurity", connections: ["Security", "Python"] },
   { id: "Pen Testing", learned: '2024', name: "Pen Testing", category: "Cybersecurity", connections: ["Security", "Networking", "Firewalls", "Vulnerability Prioritization", "OWASP"] },
   { id: "Firewalls", learned: '2023', name: "Firewalls", category: "Systems", connections: ["Networking", "Pen Testing", "Hardening"] },
   { id: "Networking", learned: '2023', name: "Networking", category: "Systems", connections: ["DNS", "Routing", "Firewalls"] },
