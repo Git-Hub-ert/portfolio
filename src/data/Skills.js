@@ -99,5 +99,14 @@ const skillsData = [
   { id: "French", name: "French", category: "Languages", connections: ["Communication", "Documentation"], level: "Native" }
 ];
 
+// Connections are undirected: declaring a link on one side is enough, the
+// other side gets it here so every card lists the same links as the graph.
+const withBacklinks = (data) => data.map((skill) => ({
+  ...skill,
+  connections: [...new Set([
+    ...skill.connections,
+    ...data.filter((other) => other.connections.includes(skill.id)).map((other) => other.id),
+  ])],
+}));
 
-export default skillsData;
+export default withBacklinks(skillsData);
