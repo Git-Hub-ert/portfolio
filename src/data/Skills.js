@@ -82,6 +82,8 @@ const skillsData = [
   { id: "Cloud Security", learned: '2026', name: "Cloud Security", category: "Cybersecurity", connections: ["Security", "IAM", "Cloud Computing", "Google Cloud Platform", "Amazon Web Services", "Terraform"] },
   { id: "OWASP", learned: '2026', name: "OWASP", category: "Cybersecurity", connections: ["Security", "Pen Testing", "Node.js", "PHP", "React"] },
   { id: "Hardening", learned: '2026', name: "Hardening", category: "Cybersecurity", connections: ["Security", "Linux Administration", "Windows Administration", "Firewalls"] },
+  { id: "Software Composition Analysis", learned: '2026', name: "Software Composition Analysis (SCA)", category: "Cybersecurity", connections: ["Vulnerability Prioritization", "SBOM", "GitLab CI", "Python", "CVSS"] },
+  { id: "CVSS", learned: '2026', name: "CVSS", category: "Cybersecurity", connections: ["Vulnerability Prioritization", "CISA KEV", "Risk Prioritization"] },
   { id: "External Attack Surface Scanning", learned: '2026', name: "External Attack Surface Scanning", category: "Cybersecurity", connections: ["Vulnerability Prioritization", "Networking", "Pen Testing", "Jira"] },
   { id: "CISA KEV", learned: '2026', name: "CISA KEV", category: "Cybersecurity", connections: ["Vulnerability Prioritization", "Threat Intelligence", "Risk Prioritization"] },
   { id: "DAST", learned: '2026', name: "DAST", category: "Cybersecurity", connections: ["OWASP", "Pen Testing", "CI/CD", "Security Process Integration"] },
