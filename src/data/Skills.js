@@ -106,6 +106,7 @@ const skillsData = [
   { id: "CMDB", learned: '2026', name: "CMDB", category: "Tools", connections: ["Atlassian", "Jira", "System Administration", "Governance"] },
   { id: "Google Sheets", learned: '2026', name: "Google Sheets", category: "Tools", connections: ["Apps Script", "Reporting & KPIs"] },
   { id: "Apps Script", learned: '2026', name: "Apps Script", category: "Tools", connections: ["Google Sheets", "Automation", "JavaScript"] },
+  { id: "JumpCloud", learned: '2026', name: "JumpCloud", category: "Tools", connections: ["IAM", "Context-Aware Access", "System Administration"] },
 
   { id: "English", name: "English", category: "Languages", connections: ["Communication", "Documentation"], level: "C2" },
   { id: "French", name: "French", category: "Languages", connections: ["Communication", "Documentation"], level: "Native" }
